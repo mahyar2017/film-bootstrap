@@ -1,0 +1,118 @@
+.mobile_canvas_active {
+  position: fixed;
+  top: 0;
+  width: 330px;
+  bottom: 0;
+  visibility: hidden;
+  transition: all 400ms ease-out;
+  background-color: rgb(14, 13, 13);
+  box-shadow: 0 0 87px 0 rgba(0, 0, 0, 0.09);
+  min-height: 100vh;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    margin: 5px;
+  }
+
+  
+  .reportage {
+    display: none;
+  }
+
+  .mobile-off-canvas a {
+    font-size: 30px;
+  }
+  .mobile_canvas_active {
+    width: 260px;
+    right: -260px;
+  }
+
+  .mobile-social-wrap {
+    margin-bottom: 20px;
+  }
+  .mobile-social-wrap a {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  .mobile-social-wrap a.facebook {
+    color: #3b5999;
+  }
+  .mobile-social-wrap a.instagram {
+    color: #e4405f;
+  }
+
+  .mobile-aside-close {
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(24, 22, 22);
+  }
+
+  .mobile-aside-close i {
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    color: #fff;
+  }
+  .mobile-aside-close:hover i {
+    color: #ff3535;
+    transform: rotate(90deg);
+  }
+
+  .mobile_canvas_active.inside {
+    visibility: visible;
+    opacity: 1;
+    right: 0px;
+  }
+
+  .mobile_menu {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 36px;
+    padding-bottom: 27px;
+  }
+  .mobile_menu .mobile_navigation nav {
+    height: 100%;
+  }
+  .mobile_menu .mobile_navigation nav > ul > li {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .menu-item-has-children .menu-expand {
+    line-height: 50;
+    top: -5px;
+    right: 85%;
+    width: 30px;
+    position: absolute;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .wrapper .body-overlay {
+    background: rgba(35, 35, 36, 0.7) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s ease-in-out 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .wrapper.overlay-active .body-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,121 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: irs;
+    background: #292b2c;
+    color: white;
+    line-height: normal;
+}
+
+* {
+    outline: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+a , a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+a, span {
+    display: inline-block !important;
+}
+
+ul li {
+    list-style: none;
+}
+
+.stick {
+    animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
+    background-color: rgb(25, 26, 34);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.06);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+
+/*Search*/
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+}
+.search_header{
+    background: #BDBDBD;
+}
+
+.nav_menu{
+    border-bottom: 1px solid red;
+    width: 100%;
+    height: 50px;
+}
+.nav_menu > ul > a{
+    margin-right: 30px;
+    display: inline-block !important;
+    padding: 3px 10px;
+    line-height: 43px;
+}
+.nav_menu > ul > a:hover{
+    background: rgb(68, 65, 65);
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.nav_menu > ul > a> li:hover{
+color: white;
+}
+
+
+.carousel-control-next{
+    left: -25px;
+}
+
+.carousel-control-prev{
+    right: -25px;
+}
+.reportage{
+    height: 300px;
+}
+.gradient{
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;}
+.slider-title{
+    line-height: 30px;
+    font-weight: bold;
+    color: white;
+}
+.slider-buttom{
+    color: white;
+    background-color: #f44336;
+}
+.border_last_content{
+    border-bottom: 1px solid red;
+}
+
+/*End Serach*/
+
+/*Login*/
+
+
+.forget_pass{
+    margin-right: 220px;
+}
+/*End Login*/
+
+.bg-register{
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+}
+
+.title-show{
+    bottom: 0px;
+    right: 15px;
+}
+
+
